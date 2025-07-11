@@ -17,13 +17,14 @@ lunch twrp_dodge-bp2a-eng
 make recoveryimage
 ```
 
+If there is no error, recovery.img will be found in out/target/product/dodge/recovery.img
 
-If there is no error, recovery.img will be found in out/target/product/dodge/recovery.img  
-**NOTE**  
-Using Github Actions to build twrp-16 branch may fail because of the large source
+**NOTE**
 
+Using Github Actions to build `twrp-16` branch may fail because of the large source
 
 ## Features
+
 Not works:
 - [ ] Touch in fastbootd
 
@@ -43,7 +44,11 @@ Works:
 
 ```
 fastboot flash recovery recovery.img
+```
+
 or
+
+```
 fastboot flash recovery_a recovery.img
 fastboot flash recovery_b recovery.img
 ```
